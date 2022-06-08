@@ -1,0 +1,19 @@
+{
+  "name": "dlna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dlna-browser-utils": "0.0.2",
+    "node-ssdp": "^4.0.1",
+    "node-upnp": "^1.2.0",
+    "request": "^2.88.2",
+    "xhrjs": "https://github.com/subatomicglue/xhrjs#main",
+    "requestjs": "https://github.com/subatomicglue/requestjs#main"
+  }
+}
