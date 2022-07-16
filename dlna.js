@@ -272,7 +272,7 @@ async function _request( GET_or_POST, url, soap_action="urn:schemas-upnp-org:ser
 
 
 // browse content
-// args = [ url (required), object_id (optional: default 0) ]
+// args = [ "content", url (required), object_id (optional: default 0) ]
 // start = start_of_data (optional: default 0)
 // count = amt_of_data   (optional: default 0)
 async function content( args, start = 0, count = 0 ) {
@@ -338,7 +338,7 @@ async function meta( args ) {
 // get device information
 // args = [ "info", device_desc_url (optional: default is to search all devices, and get info for each device's desc_url) ]
 async function info( args ) {
-  let url = args[1];
+  let url = args ? args[1] : undefined;
   let discoveries = url ? { [url]: { desc_url: url } } : await discover( 'urn:schemas-upnp-org:service:ContentDirectory:1', 0, 2500 );
   VERBOSE && console.log( "discoveries: ", util.inspect(discoveries, {showHidden: false, depth: null, colors: true}));
   let data = {};
