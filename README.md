@@ -1,8 +1,8 @@
 # dlna.js - access dlna/upnp MediaServer devices on the network
 
-- dlna.js
+- [dlna.js](dlna.js)
   - Javascript lib for accessing dlna/upnp MediaServer devices on the network
-- test-dlna.js
+- [test-dlna.js](test-dlna.js)
   - command line script to access dlna/upnp MediaServer devices on the network (test driver for the lib, and educational)
 
 ## Status:
@@ -39,6 +39,9 @@ UPnP documentation:
 
 
 ## Usage:
+Please see [test-dlna.js](test-dlna.js) for code examples.
+
+Run [test-dlna.js](test-dlna.js) to play with the capabilities / browse your own media servers:
 ```
 ./test-dlna.js - command line script to access dlna/upnp MediaServer devices on the network
 Usage:
