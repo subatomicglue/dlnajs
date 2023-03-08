@@ -17,27 +17,6 @@
 - If there's something we're missing, let us know.
 - WE LOVE MUSIC.
 
-## About DLNA/UPnP:
-The [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) discovery protocol is known as the Simple Service Discovery Protocol (SSDP).
-
-Universal Plug and Play (UPnP®) and Digital Living Network Alliance (DLNA®) are two sets of guidelines to ensure the compatibility and interoperability of your devices.
-
-DLNA is derived from UPnP specifically for the purpose of media interoperability. The main difference between the two is the scope that they cover. As mentioned above, UPnP is a set of protocols that allow different devices to discover each other and use the services that they can offer.
-
-In general, all DLNA-capable devices are also UPnP-capable since the former is derived from the later.
-
-## Reference, Links:
-Sony DLNA documentation:
-- Tutorial:  *[How to browse a Digital Living Network Alliance (DLNA) media server](https://developer.sony.com/develop/audio-control-api/get-started/browse-dlna-file)* (from sony.com)
-
-UPnP documentation:
-- *UPnP Tutorial*: http://www.upnp.org/resources/documents/UPnP_UDA_tutorial_July2014.pdf
-- *UPnP specs*: https://openconnectivity.org/developer/specifications/upnp-resources/upnp/
-  - *MediaServer:1*: http://www.upnp.org/specs/av/UPnP-av-MediaServer-v1-Device.pdf
-  - *ContentDirectory:1*: http://www.upnp.org/specs/av/UPnP-av-ContentDirectory-v1-Service.pdf
-  - *ConnectionManager:1*: http://www.upnp.org/specs/av/UPnP-av-ConnectionManager-v1-Service.pdf
-
-
 ## Usage:
 Please see [test-dlna.js](test-dlna.js) for implementation examples:
 
@@ -135,4 +114,25 @@ Example:
    curl http://192.168.4.106:8200/MediaItems/67312.mp3 -o 67312.mp3
    curl http://192.168.4.106:8200/AlbumArt/2807-67312.jpg -o 2807-67312.jpg
 ```
+
+
+## About DLNA/UPnP:
+The [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) discovery protocol is known as the Simple Service Discovery Protocol (SSDP).
+
+Universal Plug and Play (UPnP®) and Digital Living Network Alliance (DLNA®) are two sets of guidelines to ensure the compatibility and interoperability of your devices.
+
+DLNA is derived from UPnP specifically for the purpose of media interoperability. The main difference between the two is the scope that they cover. As mentioned above, UPnP is a set of protocols that allow different devices to discover each other and use the services that they can offer.
+
+In general, all DLNA-capable devices are also UPnP-capable since the former is derived from the later.
+
+## Reference, Links:
+Sony DLNA documentation:
+- Tutorial:  *[How to browse a Digital Living Network Alliance (DLNA) media server](https://developer.sony.com/develop/audio-control-api/get-started/browse-dlna-file)* (from sony.com)
+
+UPnP documentation:
+- *UPnP Tutorial*: http://www.upnp.org/resources/documents/UPnP_UDA_tutorial_July2014.pdf
+- *UPnP specs*: https://openconnectivity.org/developer/specifications/upnp-resources/upnp/
+  - *MediaServer:1*: http://www.upnp.org/specs/av/UPnP-av-MediaServer-v1-Device.pdf
+  - *ContentDirectory:1*: http://www.upnp.org/specs/av/UPnP-av-ContentDirectory-v1-Service.pdf
+  - *ConnectionManager:1*: http://www.upnp.org/specs/av/UPnP-av-ConnectionManager-v1-Service.pdf
 
