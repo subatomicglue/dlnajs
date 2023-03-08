@@ -13,7 +13,7 @@
 - We convert all XML SOAP responses into JavaScript objects (you're welcome), you don't need to work with XML or SOAP with the high level API below.
 - Testing:
   - We've tested on the DLNA server built into the [Netgear ReadyNAS 626x](https://www.netgear.com/support/product/RN626X.aspx) and [Plex](https://www.plex.tv/).
-  - Please let us know your success or failures with other equipment.
+  - Please let us know your success or failures with other equipment, using the [Issue Tracker](https://github.com/subatomicglue/dlnajs/issues) above.
 - If there's something we're missing, let us know.
 - WE LOVE MUSIC.
 
