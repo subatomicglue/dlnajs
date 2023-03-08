@@ -41,12 +41,7 @@ UPnP documentation:
 ## Usage:
 Please see [test-dlna.js](test-dlna.js) for implementation examples:
 
-Discover UPnP/DLNA MediaServers:
-```
-let result = await dlna.discover( 'urn:schemas-upnp-org:service:ContentDirectory:1', 0, 2500 );
-console.log( result );
-```
-
+### Usage: High Level API
 Discover all UPnP/DLNA MediaServers on local network, or get info about one UPnP/DLNA MediaServer:
 ```
 let args = ["info", <desc_url>]   // 2nd parameter is optional
@@ -66,6 +61,13 @@ Get content metadata
 let args = [<get|post>, <desc_url>]
 let result = await dlna.meta( args );
 console.log( util.inspect(result, {showHidden: false, depth: null, colors: true}) );
+```
+
+### Usage: Low Level API:
+Discover UPnP/DLNA MediaServers:
+```
+let result = await dlna.discover( 'urn:schemas-upnp-org:service:ContentDirectory:1', 0, 2500 );
+console.log( result );
 ```
 
 Get or Post
