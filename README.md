@@ -12,7 +12,7 @@
 - We focus on device discovery and browsing, `MediaServer` devices and their `ContentDirectory` listings (using `BrowseDirectChildren` and `BrowseMetadata`).
 - We convert all XML SOAP responses into JavaScript objects (you're welcome), you don't need to work with XML or SOAP with the high level API below.
 - Testing:
-  - We've tested on the DLNA server built into the Netgear ReadyNAS 626x.
+  - We've tested on the DLNA server built into the [Netgear ReadyNAS 626x](https://www.netgear.com/support/product/RN626X.aspx).
   - Please let us know your success or failures with other equipment.
 - If there's something we're missing, let us know.
 - WE LOVE MUSIC.
