@@ -39,7 +39,37 @@ UPnP documentation:
 
 
 ## Usage:
-Please see [test-dlna.js](test-dlna.js) for code examples.
+Please see [test-dlna.js](test-dlna.js) for implementation examples:
+```
+// discover UPnP/DLNA MediaServers:
+let result = await dlna.discover( 'urn:schemas-upnp-org:service:ContentDirectory:1', 0, 2500 );
+console.log( result );
+
+// discover all UPnP/DLNA MediaServers on local network, or get info about one UPnP/DLNA MediaServer:
+let args = ["info", <desc_url>]   // 2nd parameter is optional
+let result = await dlna.info( args );
+console.log( util.inspect(result, {showHidden: false, depth: null, colors: true}) );
+
+// get content (directory under the MediaServer)
+let args = ["content", <contentdir_control_url>]
+let result = await dlna.content( args );
+console.log( util.inspect(result, {showHidden: false, depth: null, colors: true}) );
+
+// get content metadata
+let args = [<get|post>, <desc_url>]
+let result = await dlna.meta( args );
+console.log( util.inspect(result, {showHidden: false, depth: null, colors: true}) );
+
+// get or post
+let args = [<get|post>, <desc_url>]
+let result = await dlna.request( args );
+console.log( util.inspect(result, {showHidden: false, depth: null, colors: true}) );
+
+// low level get/post request
+let args = [<GET|POST>, <url>, <soap_action: urn:schemas-upnp-org:service:ContentDirectory:1#Browse>, <object=0>, <browse_flag: "BrowseDirectChildren">]
+let result = await dlna._request( ...args );
+console.log( util.inspect(result, {showHidden: false, depth: null, colors: true}) );
+```
 
 Run [test-dlna.js](test-dlna.js) to play with the capabilities / browse your own media servers:
 ```
