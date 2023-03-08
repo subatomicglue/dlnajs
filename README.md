@@ -28,7 +28,7 @@ In general, all DLNA-capable devices are also UPnP-capable since the former is d
 
 ## Reference, Links:
 Sony DLNA documentation:
-- *Tutorial: How to browse a DLNA MediaServer*: https://developer.sony.com/develop/audio-control-api/get-started/browse-dlna-file
+- Tutorial:  *How to browse a Digital Living Network Alliance (DLNA) media server*: https://developer.sony.com/develop/audio-control-api/get-started/browse-dlna-file
 
 UPnP documentation:
 - *UPnP Tutorial*: http://www.upnp.org/resources/documents/UPnP_UDA_tutorial_July2014.pdf
