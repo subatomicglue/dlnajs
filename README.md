@@ -18,7 +18,7 @@
 - WE LOVE MUSIC.
 
 ## Usage:
-Please see [test-dlna.js](test-dlna.js) for implementation examples:
+Please see [test-dlna.js](test-dlna.js) for implementation examples of the [dlna.js](dlna.js) API:
 
 ### Usage: High Level API
 Discover all UPnP/DLNA MediaServers on local network, or get info about one UPnP/DLNA MediaServer:
