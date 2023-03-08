@@ -84,6 +84,8 @@ let result = await dlna._request( ...args );
 console.log( util.inspect(result, {showHidden: false, depth: null, colors: true}) );
 ```
 
+### Usage: Test Runner
+
 Run [test-dlna.js](test-dlna.js) to play with the capabilities / browse your own media servers:
 ```
 ./test-dlna.js - command line script to access dlna/upnp MediaServer devices on the network
